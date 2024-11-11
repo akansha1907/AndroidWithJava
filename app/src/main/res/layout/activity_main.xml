@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:id="@+id/toolbar"
+                android:layout_height="wrap_content">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your weight"
+        android:layout_marginHorizontal="30dp"
+        android:inputType="number"
+        android:id="@+id/weight"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your height(in inch)"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginHorizontal="30dp"
+        android:id="@+id/height_inch"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your height(in feet)"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginHorizontal="30dp"
+        android:id="@+id/height_feet"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Caclulate My BMI"
+        android:id="@+id/calBtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="@color/fbcolor"
+        android:textAllCaps="false"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_bmi"
+        android:text="Your BMI score is"
+        android:layout_gravity="left"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:id="@+id/game_btn"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="@color/fbcolor"
+        android:text="Go To Play TicTacToe"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:id="@+id/anim_btn"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="@color/fbcolor"
+        android:text="Go To See Animation"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:layout_marginHorizontal="30dp"
+        android:id="@+id/lottie_btn"
+        style="@style/MyButtonStyle"
+        android:text="See Lottie Animation"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="30dp"
+            android:id="@+id/card_btn"
+            style="@style/MyButtonStyle"
+            android:text="See Card View Screen"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:id="@+id/custom_btn"
+            android:paddingHorizontal="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background"
+            android:text="Android Custom Button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:id="@+id/btn_call"
+            android:paddingHorizontal="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/gradient_button"
+            android:text="CALL NOW"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/btn_gmail"
+                android:paddingHorizontal="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/gradient_button_twos"
+                android:text="GMAIL"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/btn_share"
+                android:paddingHorizontal="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/gradient_button_twos"
+                android:text="SHARE"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:id="@+id/btn_message"
+                android:paddingHorizontal="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/gradient_button_twos"
+                android:text="MESSAGE"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:id="@+id/go_to_fragment"
+            android:paddingHorizontal="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background"
+            android:text="Go To Fragments Screen"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:id="@+id/tabs_btn"
+            android:paddingHorizontal="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background"
+            android:text="Go To Tabs Screen"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:id="@+id/bottom_tabs_btn"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background"
+            android:text="Go To Bottom Tabs Screen"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:id="@+id/drawer_btn"
+            android:paddingHorizontal="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background"
+            android:text="Go To Screen to Open Drawer"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:id="@+id/btn_google_maps"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/gradient_button"
+            android:text="SEE Google Map"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:id="@+id/btn_fast_network"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/gradient_button"
+            android:text="See Data fetch from fast network And Web View"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SENSOR Values"
+            android:textSize="20sp"
+            android:id="@+id/sensor_values"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SENSOR Values"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/sensor_values2"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SENSOR Values"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/sensor_values3"
+            android:textAlignment="center"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:id="@+id/background_service_btn"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/gradient_button"
+            android:text="Start Background Service"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:id="@+id/background_service_btn_stop"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/gradient_button"
+            android:text="Stop Background Service"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="set alarm time(in secs)"
+            android:layout_margin="20dp"
+            android:paddingHorizontal="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:id="@+id/alarm_input"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:id="@+id/set_alarm"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/gradient_button"
+            android:text="Set Alarm"/>
+    </LinearLayout>
+</ScrollView>
+    <!-- ems in edit text used to Makes the TextView be exactly this many ems wide. -->

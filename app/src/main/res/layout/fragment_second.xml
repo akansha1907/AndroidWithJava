@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#18E4C6"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    tools:context=".SecondFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Enter Title"
+        android:id="@+id/title_edit"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount"
+        android:id="@+id/amount_edit"/>
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Add Bill and Save in Room database"
+    android:layout_marginTop="20dp"
+    android:id="@+id/bill_add"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/take_photo_btn"
+            android:layout_height="wrap_content"
+            android:text="Take Photo"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:id="@+id/take_image"
+            android:layout_marginStart="20dp"
+            android:scaleType="fitXY"
+            android:layout_height="200dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/choose_photo_btn"
+
+            android:layout_height="wrap_content"
+            android:text="Choose Photo"/>
+        <ImageView
+            android:layout_width="180dp"
+            android:id="@+id/choose_image"
+            android:layout_marginStart="20dp"
+            android:scaleType="fitXY"
+            android:layout_height="200dp"/>
+    </LinearLayout>
+</LinearLayout>

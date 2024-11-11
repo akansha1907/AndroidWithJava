@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".TicTacToeActivity">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:text="Player 1 is 'X'"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Player 2 is 'O'"
+        android:layout_marginBottom="20dp"/>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:columnCount="3"
+        android:id="@+id/grid"
+        android:layout_height="wrap_content">
+        <Button android:layout_height="90dp" android:id="@+id/btn_1" android:layout_marginLeft="5dp" android:backgroundTint="#93B669" android:onClick="handleClick"/>
+        <Button android:layout_height="90dp" android:id="@+id/btn_2" android:layout_marginLeft="5dp" android:backgroundTint="#93B669" android:onClick="handleClick"/>
+        <Button android:layout_height="90dp" android:id="@+id/btn_3" android:layout_marginLeft="5dp" android:backgroundTint="#93B669" android:onClick="handleClick"/>
+        <Button android:layout_height="90dp" android:id="@+id/btn_4" android:layout_marginLeft="5dp" android:backgroundTint="#93B669" android:onClick="handleClick"/>
+        <Button android:layout_height="90dp" android:id="@+id/btn_5" android:layout_marginLeft="5dp" android:backgroundTint="#93B669" android:onClick="handleClick"/>
+        <Button android:layout_height="90dp" android:id="@+id/btn_6" android:layout_marginLeft="5dp" android:backgroundTint="#93B669" android:onClick="handleClick"/>
+        <Button android:layout_height="90dp" android:id="@+id/btn_7" android:layout_marginLeft="5dp" android:backgroundTint="#93B669" android:onClick="handleClick"/>
+        <Button android:layout_height="90dp" android:id="@+id/btn_8" android:layout_marginLeft="5dp" android:backgroundTint="#93B669" android:onClick="handleClick"/>
+        <Button android:layout_height="90dp" android:id="@+id/btn_9" android:layout_marginLeft="5dp" android:backgroundTint="#93B669" android:onClick="handleClick"/>
+    </GridLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/restart_btn"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:backgroundTint="#617845"
+        android:text="Restart Game"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="20dp"
+        android:id="@+id/winner_text"/>
+</LinearLayout>
